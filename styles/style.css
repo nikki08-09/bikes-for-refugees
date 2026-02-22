@@ -14,7 +14,8 @@
  }
 
 body {
-  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 body,
@@ -66,7 +67,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 
 .navigation__link {
@@ -92,10 +93,33 @@ p {
   border-left-color: var(--orange-dark);
 }
 
+.button-donate {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.90rem;
+  margin-bottom: 0.7rem;
+}
 
-/* Buttons */
+.button-volunteer {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.90rem;
+  margin-bottom: 0.7rem;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+button:hover {
+  opacity: 0.9;
+}
 
 
 /* Content */
@@ -120,18 +144,22 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: 89.3%;
+  padding: 4rem 2rem;
+  color: var(--white);
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1.12rem;
+  margin-bottom: 2.5rem;
 }
 
 
@@ -162,7 +190,40 @@ p {
 /* Article */
 
 .article {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.learn-more {
+  display: flex;
+}
+
+.learn-more .article {
+  display: block;
+  background: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-right: 1rem;
+}
+
+.learn-more .article__summary {
   margin-bottom: 1rem;
+}
+
+.learn-more .article__read-more a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--orange-dark);
+  text-decoration: none;
+}
+
+.learn-more .article__read-more a:hover {
+  text-decoration: underline;
 }
 
 .article__title {
@@ -178,37 +239,26 @@ p {
 
 .article__summary {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
 .article__thumbnail {
-  object-fit: contain;
-  width: 5rem;
-}
-
-.article__read-more {
-  margin-top: 0;
-}
-
-.article__read-more a {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--orange-dark);
-  text-decoration: none;
-}
-
-.article__read-more a:hover,
-.article__read-more a:focus {
-  text-decoration: underline;
+  width: 60px;
+  height: auto;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
 }
 
 .fa {
-  margin-right: 0.5rem;
   color: var(--orange-dark);
 }
 
 .facebook-link {
+  display: block;
+  text-align: right;
   color: var(--orange-dark);
+  font-weight: 600;
 }
 
 /* Sidebar */
@@ -227,8 +277,7 @@ p {
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .footer p {
