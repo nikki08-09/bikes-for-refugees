@@ -201,6 +201,7 @@ button:hover {
 
 .learn-more {
   display: flex;
+  gap: 1rem;
 }
 
 .learn-more .article {
@@ -209,7 +210,6 @@ button:hover {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 1.5rem;
-  margin-right: 1rem;
 }
 
 .learn-more .article__summary {
@@ -221,10 +221,6 @@ button:hover {
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
-}
-
-.learn-more .article__read-more a:hover {
-  text-decoration: underline;
 }
 
 .article__title {
@@ -273,7 +269,7 @@ button:hover {
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .footer__content {
