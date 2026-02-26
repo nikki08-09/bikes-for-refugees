@@ -82,6 +82,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
+
 /* Text styles */
 
 .text-highlight {
@@ -109,6 +113,11 @@ p {
   margin-bottom: 0.7rem;
 }
 
+.button-donate:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
 .button-volunteer {
   background-color: var(--white);
   color: var(--orange-dark);
@@ -121,8 +130,9 @@ p {
   margin-bottom: 0.7rem;
 }
 
-button:hover {
-  opacity: 0.9;
+.button-volunteer:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 /* Content */
